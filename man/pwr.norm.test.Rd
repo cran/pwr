@@ -4,18 +4,19 @@
 \title{Power calculations for the mean of a normal distribution (known variance)}
 \description{
  Compute power of test or determine parameters to obtain target
-     power.}
+     power (same as power.anova.test).}
 \usage{
-pwr.norm.test(d = NULL, n = NULL, sig.level = 0.05, power = NULL, alternative = c("two.sided", "one.sided"))
-}
+pwr.norm.test(d = NULL, n = NULL, sig.level = 0.05, power = NULL, 
+    alternative = c("two.sided","less","greater"))}
 
 \arguments{
   \item{d}{Effect size d=mu-mu0}
   \item{n}{Number of observations}
   \item{sig.level}{Significance level (Type I error probability)}
   \item{power}{Power of test (1 minus Type II error probability)}
-  \item{alternative}{One- or two-sided test}
-}
+\item{alternative}{a character string specifying the alternative hypothesis,
+          must be one of "two.sided" (default), "greater" or
+          "less"}}
 \details{
  Exactly one of the parameters 'd','n','power' and
      'sig.level' must be passed as NULL, and that parameter is
@@ -25,12 +26,12 @@ pwr.norm.test(d = NULL, n = NULL, sig.level = 0.05, power = NULL, alternative = 
 
 }
 \value{
-   Object of class 'power.htest', a list of the arguments
-     (including the computed one) augmented with 'method'
-     element.
+   Object of class '"power.htest"', a list of the arguments
+     (including the computed one) augmented with 'method' and 'note'
+     elements.
 }
 \references{J. Cohen (1988) Statistical power analysis for the
-	behavioral scientist. Lawrence Erlbaum Associates, publishers.}
+	behavioral sciences. Lawrence Erlbaum Associates, publishers.}
 \author{Stéphane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
 \note{  
 'uniroot' is used to solve power equation for unknowns, so you may
@@ -44,15 +45,15 @@ sigma<-15
 c<-100
 mu<-105
 d<-(mu-c)/sigma
-pwr.norm.test(d=d,n=20,sig.level=0.05,alternative="one.sided")
+pwr.norm.test(d=d,n=20,sig.level=0.05,alternative="greater")
 
 ## Sample size of the test for power=0.80
-pwr.norm.test(d=d,power=0.8,sig.level=0.05,alternative="one.sided")
+pwr.norm.test(d=d,power=0.8,sig.level=0.05,alternative="greater")
 
 ## Power function of the same test
 mu<-seq(95,125,l=100)
 d<-(mu-c)/sigma
-plot(d,pwr.norm.test(d=d,n=20,sig.level=0.05,alternative="one.sided")$power,type="l",ylim=c(0,1))
+plot(d,pwr.norm.test(d=d,n=20,sig.level=0.05,alternative="greater")$power,type="l",ylim=c(0,1))
 abline(h=0.05)
 abline(h=0.80)
 

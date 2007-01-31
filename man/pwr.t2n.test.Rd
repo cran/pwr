@@ -1,24 +1,26 @@
-\name{pwr.chisq.test}
-\alias{pwr.chisq.test}
-
-\title{power calculations for chi-squared tests}
+\name{pwr.t2n.test}
+\alias{pwr.t2n.test}
+\title{Power calculations for two samples (different sizes) t-tests of means }
 \description{
-Compute power of test or determine parameters to obtain target
-     power (same as power.anova.test).}
-}
+ Compute power of tests or determine parameters to obtain target
+     power (similar to as power.t.test).}
 \usage{
-pwr.chisq.test(w = NULL, N = NULL, df = NULL, sig.level = 0.05, power = NULL)
-}
-
+pwr.t2n.test(n1 = NULL, n2= NULL, d = NULL, sig.level = 0.05, power = NULL,
+ alternative = c("two.sided", 
+        "less","greater"))}
+%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{w}{Effect size}
-  \item{N}{Total number of observations}
-  \item{df}{degree of freedom (depends on the chosen test)}
+  \item{n1}{Number of observations in the first sample}
+  \item{n2}{Number of observations in the second sample}
+  \item{d}{Effect size}
   \item{sig.level}{Significance level (Type I error probability)}
   \item{power}{Power of test (1 minus Type II error probability)}
+  \item{alternative}{a character string specifying the alternative hypothesis,
+          must be one of "two.sided" (default), "greater" or
+          "less"}
 }
 \details{
- Exactly one of the parameters 'w','N','power' and
+ Exactly one of the parameters 'd','n1','n2','power' and
      'sig.level' must be passed as NULL, and that parameter is
      determined from the others. Notice that the last one has non-NULL
      default so NULL must be explicitly passed if you want to compute
@@ -38,16 +40,9 @@ pwr.chisq.test(w = NULL, N = NULL, df = NULL, sig.level = 0.05, power = NULL)
      see errors from it, notably about inability to bracket the root
      when invalid arguments are given.
 }
-\seealso{ES.w1,ES.w2}
 \examples{
 
-## Exercise 7.1 P. 249 from Cohen (1988) 
-pwr.chisq.test(w=0.289,df=(4-1),N=100,sig.level=0.05)
-
-## Exercise 7.3 p. 251
-pwr.chisq.test(w=0.346,df=(2-1)*(3-1),N=140,sig.level=0.01)
-
-## Exercise 7.8 p. 270
-pwr.chisq.test(w=0.1,df=(5-1)*(6-1),power=0.80,sig.level=0.05)
+## Exercise 2.3 p. 437 from Cohen (1988)
+pwr.t2n.test(d=0.6,n1=90,n2=60,alternative="greater")
 }
 \keyword{htest}

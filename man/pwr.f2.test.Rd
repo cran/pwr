@@ -1,29 +1,25 @@
-\name{pwr.chisq.test}
-\alias{pwr.chisq.test}
-
-\title{power calculations for chi-squared tests}
+\name{pwr.f2.test}
+\alias{pwr.f2.test}
+\title{Power calculations for the general linear model}
 \description{
-Compute power of test or determine parameters to obtain target
+ Compute power of test or determine parameters to obtain target
      power (same as power.anova.test).}
-}
 \usage{
-pwr.chisq.test(w = NULL, N = NULL, df = NULL, sig.level = 0.05, power = NULL)
+pwr.f2.test(u = NULL, v = NULL, f2 = NULL, sig.level = 0.05, power = NULL)
 }
-
 \arguments{
-  \item{w}{Effect size}
-  \item{N}{Total number of observations}
-  \item{df}{degree of freedom (depends on the chosen test)}
+  \item{u}{degrees of freedom for numerator}
+  \item{v}{degrees of freedomfor denominator}
+  \item{f2}{effect size}
   \item{sig.level}{Significance level (Type I error probability)}
   \item{power}{Power of test (1 minus Type II error probability)}
 }
 \details{
- Exactly one of the parameters 'w','N','power' and
+ Exactly one of the parameters 'u','v','f2','power' and
      'sig.level' must be passed as NULL, and that parameter is
      determined from the others. Notice that the last one has non-NULL
      default so NULL must be explicitly passed if you want to compute
      it.
-
 }
 \value{
    Object of class '"power.htest"', a list of the arguments
@@ -38,16 +34,9 @@ pwr.chisq.test(w = NULL, N = NULL, df = NULL, sig.level = 0.05, power = NULL)
      see errors from it, notably about inability to bracket the root
      when invalid arguments are given.
 }
-\seealso{ES.w1,ES.w2}
 \examples{
 
-## Exercise 7.1 P. 249 from Cohen (1988) 
-pwr.chisq.test(w=0.289,df=(4-1),N=100,sig.level=0.05)
-
-## Exercise 7.3 p. 251
-pwr.chisq.test(w=0.346,df=(2-1)*(3-1),N=140,sig.level=0.01)
-
-## Exercise 7.8 p. 270
-pwr.chisq.test(w=0.1,df=(5-1)*(6-1),power=0.80,sig.level=0.05)
+## Exercise 9.1 P. 424 from Cohen (1988) 
+pwr.f2.test(u=5,v=89,f2=0.1/(1-0.1),sig.level=0.05)
 }
 \keyword{htest}

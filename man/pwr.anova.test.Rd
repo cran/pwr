@@ -4,7 +4,7 @@
 \title{Power calculations for balanced one-way analysis of variance tests}
 \description{
  Compute power of test or determine parameters to obtain target
-     power (same as power.anova.test except for the definition of the effect size).}
+     power (same as power.anova.test).}
 \usage{
 pwr.anova.test(k = NULL, n = NULL, f = NULL, sig.level = 0.05, power = NULL)
 }
@@ -17,7 +17,7 @@ pwr.anova.test(k = NULL, n = NULL, f = NULL, sig.level = 0.05, power = NULL)
   \item{power}{Power of test (1 minus Type II error probability)}
 }
 \details{
- Exactly one of the parameters 'k','n','f','power' and
+ Exactly one of the parameters 'k','n','h','power' and
      'sig.level' must be passed as NULL, and that parameter is
      determined from the others. Notice that the last one has non-NULL
      default so NULL must be explicitly passed if you want to compute
@@ -25,14 +25,13 @@ pwr.anova.test(k = NULL, n = NULL, f = NULL, sig.level = 0.05, power = NULL)
 
 }
 \value{
-   Object of class 'power.htest', a list of the arguments
+   Object of class '"power.htest"', a list of the arguments
      (including the computed one) augmented with 'method' and 'note'
      elements.
 }
 \references{J. Cohen (1988) Statistical power analysis for the
-	behavioral scientist. Lawrence Erlbaum Associates, publishers.}
-\seealso{power.anova.test}
-\author{Stéphane Champely <champely@univ-lyon1.fr> but this is a mere copy of Cmaus Ekstrom work (power.anova.test)}
+	behavioral sciences. Lawrence Erlbaum Associates, publishers.}
+\author{Stéphane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
 \note{  
 'uniroot' is used to solve power equation for unknowns, so you may
      see errors from it, notably about inability to bracket the root

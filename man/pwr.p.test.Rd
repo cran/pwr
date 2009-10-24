@@ -31,18 +31,21 @@ These calculations use arcsine transformation of the proportion (see Cohen (1988
      (including the computed one) augmented with 'method' and 'note'
      elements.
 }
-\references{J. Cohen (1988) Statistical power analysis for the
-	behavioral sciences. Lawrence Erlbaum Associates, publishers.}
-\author{Stéphane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
+\references{Cohen, J. (1988). Statistical power analysis for the
+	behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.}
+\author{Stephane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
 \note{  
 'uniroot' is used to solve power equation for unknowns, so you may
      see errors from it, notably about inability to bracket the root
      when invalid arguments are given.
 }
+\seealso{ES.h}
 \examples{
 
-## Exercise 6.5 p. 203 from Cohen (1988)
-pwr.p.test(h=0.2,n=60,sig.level=0.05,alternative="two.sided")
+## Exercise 6.5 p. 203 from Cohen 
+h<-ES.h(0.5,0.4)
+h
+pwr.p.test(h=h,n=60,sig.level=0.05,alternative="two.sided")
 
 ## Exercise 6.8 p. 208
 pwr.p.test(h=0.2,power=0.95,sig.level=0.05,alternative="two.sided")

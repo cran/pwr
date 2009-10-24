@@ -29,16 +29,16 @@ pwr.anova.test(k = NULL, n = NULL, f = NULL, sig.level = 0.05, power = NULL)
      (including the computed one) augmented with 'method' and 'note'
      elements.
 }
-\references{J. Cohen (1988) Statistical power analysis for the
-	behavioral sciences. Lawrence Erlbaum Associates, publishers.}
-\author{Stéphane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
+\references{Cohen, J. (1988). Statistical power analysis for the
+	behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.}
+\author{Stephane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
 \note{  
 'uniroot' is used to solve power equation for unknowns, so you may
      see errors from it, notably about inability to bracket the root
      when invalid arguments are given.
 }
+\seealso{power.anova.test}
 \examples{
-
 ## Exercise 8.1 P. 357 from Cohen (1988) 
 pwr.anova.test(f=0.28,k=4,n=20,sig.level=0.05)
 

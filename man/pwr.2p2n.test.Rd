@@ -31,22 +31,21 @@ pwr.2p2n.test(h = NULL, n1 = NULL, n2 = NULL, sig.level = 0.05, power = NULL,alt
      (including the computed one) augmented with 'method' and 'note'
      elements.
 }
-\references{J. Cohen (1988) Statistical power analysis for the
-	behavioral sciences. Lawrence Erlbaum Associates, publishers.}
-\author{Stéphane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
+\references{Cohen, J. (1988). Statistical power analysis for the
+	behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.}
+\author{Stephane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
 \note{  
 'uniroot' is used to solve power equation for unknowns, so you may
      see errors from it, notably about inability to bracket the root
      when invalid arguments are given.
 }
-\seealso{pwr.2p.test}
+\seealso{ES.h, pwr.2p.test, power.prop.test}
 \examples{
 ## Exercise 6.3 P. 200 from Cohen (1988)
 pwr.2p2n.test(h=0.30,n1=80,n2=245,sig.level=0.05,alternative="greater")
 
 ## Exercise 6.7 p. 207 from Cohen (1988)
 pwr.2p2n.test(h=0.20,n1=1600,power=0.9,sig.level=0.01,alternative="two.sided")
-
 }
 \keyword{htest}
 

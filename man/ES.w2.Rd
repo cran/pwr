@@ -17,9 +17,9 @@ ES.w2(P)
 \value{
 The corresponding effect size w
 }
-\references{J. Cohen (1988) Statistical power analysis for the
-	behavioral sciences. Lawrence Erlbaum Associates, publishers.}
-\author{Stéphane CHAMPELY}
+\references{Cohen, J. (1988). Statistical power analysis for the
+	behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.}
+\author{Stephane CHAMPELY}
 
 
 \seealso{pwr.chisq.test}

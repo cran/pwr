@@ -19,12 +19,12 @@ The effect size is 2*asin(sqrt(p1))-2*asin(sqrt(p2))
 \value{
   The corresponding effect size
 }
-\references{J. Cohen (1988) Statistical power analysis for the
-	behavioral sciences. Lawrence Erlbaum Associates, publishers.}
-\author{Stéphane CHAMPELY}
+\references{Cohen, J. (1988). Statistical power analysis for the
+	behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.}
+\author{Stephane CHAMPELY}
 
 
-\seealso{pwr.p.test, pwr.2p.test, pwr.2p2n.test}
+\seealso{pwr.p.test, pwr.2p.test, pwr.2p2n.test, power.prop.test}
 
 \examples{
 ## Exercise 6.5 p. 203 from Cohen 

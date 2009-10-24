@@ -26,9 +26,9 @@ pwr.f2.test(u = NULL, v = NULL, f2 = NULL, sig.level = 0.05, power = NULL)
      (including the computed one) augmented with 'method' and 'note'
      elements.
 }
-\references{J. Cohen (1988) Statistical power analysis for the
-	behavioral sciences. Lawrence Erlbaum Associates, publishers.}
-\author{Stéphane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
+\references{Cohen, J. (1988). Statistical power analysis for the
+	behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.}
+\author{Stephane Champely <champely@univ-lyon1.fr> but this is a mere copy of Peter Dalgaard work (power.t.test)}
 \note{  
 'uniroot' is used to solve power equation for unknowns, so you may
      see errors from it, notably about inability to bracket the root

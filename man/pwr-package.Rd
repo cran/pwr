@@ -3,7 +3,7 @@
 \alias{pwr}
 \docType{package}
 \title{
-Basic power calculations 
+Basic Functions for Power Analysis
 pwr
 }
 \description{
@@ -15,9 +15,9 @@ Power calculations along the lines of Cohen (1988)
 \tabular{ll}{
 Package: \tab pwr\cr
 Type: \tab Package\cr
-Version: \tab 1.1.1\cr
-Date: \tab 2009-10-24\cr
-License: \tab GPL version 2 or newer \cr
+Version: \tab 1.1-2\cr
+Date: \tab 2015-02-27\cr
+License: \tab GPL (>= 3) \cr
 }
 This package contains functions for basic power calculations using effect sizes and 
 	notations from Cohen (1988) :
@@ -36,9 +36,10 @@ This package contains functions for basic power calculations using effect sizes 
 	cohen.ES: computing effect sizes for all the previous tests corresponding to conventional effect sizes (small, medium, large) 
 }
 \author{
-Stephane Champely (based on previous works by Claus Ekstrom and Peter Dalgaard)
+Stephane Champely, based on previous works by Claus Ekstrom and Peter Dalgaard,
+with contributions of Jeffrey Gill.
 
-Maintainer: Stephane Champely <champely@univ-lyon1.fr>
+Maintainer: Helios De Rosario-Martinez <helios.derosario@gmail.com>
 }
 \references{Cohen, J. (1988). Statistical power analysis for the
 	behavioral sciences (2nd ed.). Hillsdale,NJ: Lawrence Erlbaum.}

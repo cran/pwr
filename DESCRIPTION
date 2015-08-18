@@ -1,23 +1,26 @@
 Package: pwr
-Version: 1.1-2
-Date: 2015-02-27
+Version: 1.1-3
+Date: 2015-08-18
 Title: Basic Functions for Power Analysis
 Authors@R: c(person("Stephane", "Champely", role=c("aut")),
   person("Claus", "Ekstrom", role="ctb"),
   person("Peter", "Dalgaard", role="ctb"),
   person("Jeffrey", "Gill", role="ctb"),
+  person("Jan", "Wunder", role="ctb"),
   person("Helios", "De Rosario", role="cre",
   email="helios.derosario@gmail.com"))
 Description: Power analysis functions along the lines of Cohen (1988).
+Imports: stats
 License: GPL (>= 3)
 URL: https://github.com/heliosdrm/pwr
-Packaged: 2015-02-27 21:33:46 UTC; helios
+NeedsCompilation: no
+Packaged: 2015-08-18 11:03:10 UTC; meliana
 Author: Stephane Champely [aut],
   Claus Ekstrom [ctb],
   Peter Dalgaard [ctb],
   Jeffrey Gill [ctb],
+  Jan Wunder [ctb],
   Helios De Rosario [cre]
 Maintainer: Helios De Rosario <helios.derosario@gmail.com>
-NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2015-02-28 01:20:31
+Date/Publication: 2015-08-19 11:50:11

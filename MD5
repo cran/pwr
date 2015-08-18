@@ -1,6 +1,6 @@
-177b4c6483d817c0ad179bb2d818c722 *ChangeLog
-20db98a773f3db4651baacf9eeef55f8 *DESCRIPTION
-9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+8d92bb70de050f8816aa067402e91302 *ChangeLog
+fdd7bd973984a5dc5d991b855c0d4b0f *DESCRIPTION
+11e149dc7011de8caee67183280e9dd3 *NAMESPACE
 b8a87f4ddac74d10af98b71c93eef5cb *R/ES.h.R
 20e4fa58c12b787eba3fdfbbdec1934e *R/ES.w1.R
 8d1b3ba98a6a3e6040a18ab99375c8ae *R/ES.w2.R
@@ -14,12 +14,12 @@ b8a87f4ddac74d10af98b71c93eef5cb *R/ES.h.R
 4d7477623055f5b8ee2fae875b780ba9 *R/pwr.p.test.R
 d91303ae3d335cc92a20da860d0b87cb *R/pwr.r.test.R
 93866fdffb0c0da1e1a41107eaffb73c *R/pwr.t.test.R
-86c5b8768492a96afb5173c63b800036 *R/pwr.t2n.test.R
+60d94a763875c5d1e1d2500d5abf4c90 *R/pwr.t2n.test.R
 eca9274a0fb0feba8000a076e5796800 *man/ES.h.Rd
 800c5e5691e698138998a86b4c410dee *man/ES.w1.Rd
 16994846d5cf682688fd5617d6193185 *man/ES.w2.Rd
 c060199d3c12481ab4bf243844a09068 *man/cohen.ES.Rd
-a4416160c5e41009836aa0b9bbe722d1 *man/pwr-package.Rd
+8c5ccd3118ad8f17be8b80c6d667dd9c *man/pwr-package.Rd
 6573055b854cd28d915583603bd38f65 *man/pwr.2p.test.Rd
 8199bee63fdd444a299277f0cc1a7ac6 *man/pwr.2p2n.test.Rd
 08366a803f961bf9c3c79f8f30eaa159 *man/pwr.anova.test.Rd
